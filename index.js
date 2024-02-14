@@ -12,11 +12,3 @@ function openLinkInNewTab(url) {
     
     a.dispatchEvent(evt);
 }
-
-function openResumeWordDocument() {
-    // Replace 'path_to_your_word_document.docx' with the actual path to your Word document
-    var wordDocumentUrl = '/documents/JackResume.docx';
-    
-    // Open the Word document in a new tab
-    window.open(wordDocumentUrl, '_blank');
-}
