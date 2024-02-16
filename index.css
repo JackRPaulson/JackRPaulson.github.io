@@ -128,10 +128,9 @@ p a:visited {
 .sm-list {
     list-style: none;
     margin: 0 auto;
-    overflow: hidden;
     padding: 0;
     display: block;
-    width: 500px;
+    width: 410px; /* set to 500 if add 6th icon  */
 }
 
 .sm-list a {
