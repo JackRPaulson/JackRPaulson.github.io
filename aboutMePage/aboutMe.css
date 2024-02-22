@@ -1,0 +1,75 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(83, 82, 82); /* Change the background color as desired */
+}
+
+h1 {
+    text-align: center;
+    color: rgb(7, 241, 7) /* Change the color as desired */
+}
+
+div {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 10px;
+    text-align: center;
+}
+
+p {
+    text-align: center;
+    margin: 10px 0;
+    line-height: 1.6;
+    color: black; /* Change the color as desired */
+}
+
+a {
+    text-decoration: none;
+    color: gray; /* Change the color as desired */
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+button {
+    background-color: rgb(7, 241, 7); /* Change the background color as desired */
+    color: black; /* Change the text color as desired */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 2px solid;
+    cursor: pointer;
+    margin: 20px;
+}
+
+button:hover {
+    background-color: green; /* Change the hover background color as desired */
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    border: 25px solid rgb(7, 241, 7); /* Add border around the list */
+    border-radius: 10px; /* Optional: Add rounded corners */
+    max-width: 400px; /* Adjust as needed */
+    margin: 0 auto;
+    margin-bottom: 10px;
+
+}
+
+ul li {
+    margin: 10px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #333; /* Change the color as desired */
+    font-weight: bold;
+}
+
+ul li a:hover {
+    color: rgb(7, 241, 7); /* Change the color as desired */
+}
