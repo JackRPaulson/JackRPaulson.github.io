@@ -46,15 +46,12 @@ body {
     width: 12em;
 }
 
-
-
 h1 {
     text-align: center;
     width: 100%;
     font-family: "Lora";
     height: 1.3em;
 }
-
 
 p {
     text-align: center;
@@ -103,6 +100,8 @@ p a:visited {
     color: black;
     border: 2px solid #111;
     user-select: none; /* Makes so the text on buttons are not selected */
+    align-items: center;
+    line-height: 18px;
 }
 
 #linkButtons:hover {
@@ -121,7 +120,6 @@ p a:visited {
     width: 34em;
     margin: 0 auto;
     padding-top: 1.1em;
-    padding-bottom: 1em;
     border-top: 2px solid gray;
     text-align: center;
 }
