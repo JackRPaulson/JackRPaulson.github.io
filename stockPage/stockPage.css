@@ -58,5 +58,61 @@ body {
     border: 5px solid black; /* Border properties */
     border-radius: 20px; /* Curved corners */
     padding: 20px; /* Add padding for better appearance */
-    margin: 30px;
+    margin-bottom: 20px;
+}
+
+.reasonIOwnDiv {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+}
+.reasonIOwnHeader {
+    border-bottom: 3px solid black; 
+    margin: 0;
+}
+
+.reasonIOwnDescription {
+    height:100%; 
+    margin:0; 
+    margin-top: 5px;
+}
+
+.companyLogo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+}
+
+.companyLogo {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+}
+
+.companyTable {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.companyTable th, .companyTable td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: center;
+    border: 3px solid black; 
+}
+
+.companyTable th {
+    background-color: #333; /* Dark gray background */
+    color: white; /* White text color */
+}
+
+.companyTable tr:nth-child(even) {
+    background-color: #b8b6b6; /* Light gray background for even rows */
+}
+
+.companyTable tr:hover {
+    background-color: #00ff1e; /* lime green background on hover */
 }
