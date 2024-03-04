@@ -49,6 +49,17 @@ body {
     border-width: 5px;
     font-size: 20px;
 }
+.sectionTitle {
+    text-align: center;
+    width:100%
+}
+
+.assetAllocationIMG{
+    width: 100%;
+    border: 5px solid black;
+    border-radius: 20px;
+    user-select: none; /* Makes so the text on the img are not selected */
+}
 
 .stockPhilosphyText {
     background-color: white;
@@ -61,6 +72,8 @@ body {
     margin-bottom: 20px;
 }
 
+
+
 .reasonIOwnDiv {
     display: flex;
     flex-direction: column;
@@ -70,6 +83,7 @@ body {
 .reasonIOwnHeader {
     border-bottom: 3px solid black; 
     margin: 0;
+    text-decoration: none;
 }
 
 .reasonIOwnDescription {
@@ -83,6 +97,7 @@ body {
     justify-content: center;
     align-items: center;
     width: 60%;
+    user-select: none; /* Makes so the text on the img are not selected */
 }
 
 .companyLogo {
@@ -95,6 +110,7 @@ body {
 .companyTable {
     width: 100%;
     border-collapse: collapse;
+    
 }
 
 .companyTable th, .companyTable td {
@@ -107,6 +123,11 @@ body {
 .companyTable th {
     background-color: #333; /* Dark gray background */
     color: white; /* White text color */
+    user-select: none; /* Makes so the text on buttons are not selected */
+}
+
+.companyTable tr {
+    user-select: none; /* Makes so the text on the rows are not selected */
 }
 
 .companyTable tr:nth-child(even) {
@@ -116,3 +137,45 @@ body {
 .companyTable tr:hover {
     background-color: #00ff1e; /* lime green background on hover */
 }
+
+  .button-row {
+    text-align: center; /* Center the buttons horizontally */
+  }
+  
+  .button-row button {
+    margin: 0 10px 10px; /* Add some spacing between buttons */
+    padding: 10px; /* Add padding to the buttons */
+    background-color: white; /* Blue background */
+    color: black; /* Black text color */
+    border: 5px solid black;/* Remove button border */
+    border-radius: 20px; /* Rounded corners */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    display: inline-block; /* Display buttons inline */
+    width: 45%;
+    font-weight: bold;
+  }
+  
+  .button-row button:hover {
+    background-color: #00ff1e; /* lime green background on hover */
+  }
+
+  .backButton {
+    margin: 0 10px 10px; /* Add some spacing between buttons */
+    padding: 10px; /* Add padding to the buttons */
+    background-color: white; /* Blue background */
+    color: black; /* Black text color */
+    border: 5px solid black;/* Remove button border */
+    border-radius: 20px; /* Rounded corners */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    display: inline-block; /* Display buttons inline */
+    font-weight: bold;
+    justify-content: center; /* Align horizontally in the center */
+    align-items: center; 
+    text-decoration: none;
+    position: relative;
+    top: 15px;
+  }
+
+  .backButton:hover {
+    background-color: #00ff1e; /* lime green background on hover */
+  }

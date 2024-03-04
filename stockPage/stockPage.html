@@ -1,18 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <script src="stockPage.js"></script>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Image and Text Boxes</title>
         <link rel="stylesheet" href="stockPage.css">
     </head>
     <body>
-        <a href="../index.html"><button>Back</button></a>
         <div class="stockPhilosphyText">
-            <h1>Building a Lifetime Portfolio: My Investment Philosophy</h1>
+            <div style ="display: flex;">
+                <a href="../index.html"><button class="backButton">Back</button></a>
+                <h1 class="sectionTitle">Building a Lifetime Portfolio: My Investment Philosophy</h1>
+            </div>
             <p>Inspired by Warren Buffett's motto of buying great companies at fair prices, my investment strategy prioritizes quality over quantity. I believe in holding exceptional businesses for the long term. I am trying to build a portfolio for a lifetime. I only purchase companies I plan to hold for my entire life. This "never sell" approach demands meticulous selection, ensuring I'm fully confident in each holding's long-term potential.</p>
             <h2>Coma Test</h2>
-            <p>Durability is paramount in my analysis. I ask myself, "If I were in a coma for 100 years, would this company still thrive?" This naturally leads me towards strong brands with established consumer loyalty and enduring business models. Think of Starbucks' or McDonalds' enduring appeal. If I woke up in the year 21XX I would be shocked if these companies were not still around paying dividends to their shareholders.</p>
+            <p id = "updateYearRow">Durability is paramount in my analysis. I ask myself, "If I were in a coma for 100 years, would this company still thrive?" This naturally leads me towards strong brands with established consumer loyalty and enduring business models. Think of Starbucks' or McDonalds' enduring appeal. If I woke up in the year 21XX I would be shocked if these companies were not still around paying dividends to their shareholders.</p>
             
             <h2>Pricing Power</h2>
             <p>A vital filter I use is pricing power. Great brands aren't just beloved, they also command control over their pricing, creating a "moat" against competition and ensuring consistent profitability. Imagine Apple's ability to charge premium prices for its innovative products.</p>
@@ -40,7 +43,7 @@
             <ul>
                 <li>Retail: Lululemon, Target, Ulta Beauty, Canada Goose</li>
                 <li>Food & Beverage: Starbucks, Chipotle</li>
-                <li>Technology: Netflix, Peloton</li>
+                <li>Technology: Netflix, Apple</li>
             </ul>
         
             <h4>Performance:</h4>
@@ -49,17 +52,17 @@
             <h2>Diversification</h2>
             <p>While I aspire to diversify with more great brands, my youth allows me to focus on fewer, carefully chosen holdings for now. I avoid buying solely for diversification, prioritizing conviction over mere portfolio balance. Case in point: Google. When it traded at a price I deemed attractive, I invested heavily in my Roth IRA, even if it meant exceeding its one-third portfolio limit. Over time, as I invest in other compelling businesses, Google's relative weight will naturally decrease. Below is a pie chart displaying the current make up of my portfolio.</p>
      
-            <img src="../images/AssetAllocation.PNG" style="width: 100%; border: 5px solid black; border-radius: 20px; ">
+            <img src="../images/AssetAllocation.PNG" class = "assetAllocationIMG">
         </div>
         <h1 class="stockPhilosphyText" style="text-align: center" >Why I Own Each of My Stocks</h1>
-        <div class="stockPhilosphyText" style="display: flex;">
+        <div class="stockPhilosphyText" style="display: flex;"  >
             <div class="companyLogo-container">
-                <img src="../images/StockPage/googleLogo.png" alt="Logo" class="companyLogo">
+                <img src="../images/StockPage/googleLogo.png" alt="Logo" class="companyLogo" onclick="openLinkInNewTab('https://finance.yahoo.com/quote/GOOGL');">
             </div>
             <div class="reasonIOwnDiv">
-                <h2 class="reasonIOwnHeader">
+                <h1 class="reasonIOwnHeader">
                     Reason I Own Google
-                </h2>
+                </h1>
                 <p class="reasonIOwnDescription">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et sapien euismod, consectetur libero nec, consequat libero. Fusce suscipit gravida tellus, eget efficitur nulla vehicula nec. Integer et quam ligula. Pellentesque euismod tempus velit, vel suscipit nunc dapibus in. Mauris hendrerit urna sit amet massa tempor scelerisque. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed mattis massa id nisl vulputate, sit amet auctor metus blandit. Sed imperdiet, ligula vel ultrices tempor, sem sapien tempor leo, et vehicula velit enim nec nisl. Ut nec bibendum arcu. Duis vitae hendrerit dui, non efficitur odio. Proin consequat odio eget augue tincidunt, sed vehicula nulla rhoncus. Cras id arcu vel ante aliquam dignissim at id velit. Phasellus accumsan, magna at aliquam eleifend, mauris metus lacinia nisi, id euismod risus mi non leo. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vivamus dapibus vitae velit sed fermentum. Curabitur sed nunc odio.
 
@@ -73,7 +76,7 @@
         </div>
         <div class="stockPhilosphyText" style="display: flex;">
             <div class="companyLogo-container">
-                <img src="../images/StockPage/disneyLogo.png" alt="Logo" class="companyLogo">
+                <img src="../images/StockPage/disneyLogo.png" alt="Logo" class="companyLogo" onclick="openLinkInNewTab('https://finance.yahoo.com/quote/DIS');">
             </div>
             <div class="reasonIOwnDiv">
                 <h2 class="reasonIOwnHeader">
@@ -93,12 +96,12 @@
 
         <div class="stockPhilosphyText" style="display: flex;">
             <div class="companyLogo-container">
-                <img src="../images/StockPage/warnerBrosDiscovery.png" alt="Logo" class="companyLogo">
+                <img src="../images/StockPage/warnerBrosDiscovery.png" alt="Logo" class="companyLogo" onclick="openLinkInNewTab('https://finance.yahoo.com/quote/WBD');">
             </div>
             <div class="reasonIOwnDiv">
-                <h2 class="reasonIOwnHeader">
+                <h1 class="reasonIOwnHeader">
                     Reason I Own Warner Bros
-                </h2>
+                </h1>
                 <p class="reasonIOwnDescription">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et sapien euismod, consectetur libero nec, consequat libero. Fusce suscipit gravida tellus, eget efficitur nulla vehicula nec. Integer et quam ligula. Pellentesque euismod tempus velit, vel suscipit nunc dapibus in. Mauris hendrerit urna sit amet massa tempor scelerisque. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed mattis massa id nisl vulputate, sit amet auctor metus blandit. Sed imperdiet, ligula vel ultrices tempor, sem sapien tempor leo, et vehicula velit enim nec nisl. Ut nec bibendum arcu. Duis vitae hendrerit dui, non efficitur odio. Proin consequat odio eget augue tincidunt, sed vehicula nulla rhoncus. Cras id arcu vel ante aliquam dignissim at id velit. Phasellus accumsan, magna at aliquam eleifend, mauris metus lacinia nisi, id euismod risus mi non leo. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vivamus dapibus vitae velit sed fermentum. Curabitur sed nunc odio.
 
@@ -113,12 +116,12 @@
 
         <div class="stockPhilosphyText" style="display: flex;">
             <div class="companyLogo-container">
-                <img src="../images/StockPage/BoeingLogo.png" alt="Logo" class="companyLogo">
+                <img src="../images/StockPage/BoeingLogo.png" alt="Logo" class="companyLogo" onclick="openLinkInNewTab('https://finance.yahoo.com/quote/BA');">
             </div>
             <div class="reasonIOwnDiv">
-                <h2 class="reasonIOwnHeader">
+                <h1 class="reasonIOwnHeader">
                     Reason I Own Boeing
-                </h2>
+                </h1>
                 <p class="reasonIOwnDescription">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et sapien euismod, consectetur libero nec, consequat libero. Fusce suscipit gravida tellus, eget efficitur nulla vehicula nec. Integer et quam ligula. Pellentesque euismod tempus velit, vel suscipit nunc dapibus in. Mauris hendrerit urna sit amet massa tempor scelerisque. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed mattis massa id nisl vulputate, sit amet auctor metus blandit. Sed imperdiet, ligula vel ultrices tempor, sem sapien tempor leo, et vehicula velit enim nec nisl. Ut nec bibendum arcu. Duis vitae hendrerit dui, non efficitur odio. Proin consequat odio eget augue tincidunt, sed vehicula nulla rhoncus. Cras id arcu vel ante aliquam dignissim at id velit. Phasellus accumsan, magna at aliquam eleifend, mauris metus lacinia nisi, id euismod risus mi non leo. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vivamus dapibus vitae velit sed fermentum. Curabitur sed nunc odio.
 
@@ -133,12 +136,12 @@
 
         <div class="stockPhilosphyText" style="display: flex;">
             <div class="companyLogo-container">
-                <img src="../images/StockPage/SBUXLogo.png" alt="Logo" class="companyLogo">
+                <img src="../images/StockPage/SBUXLogo.png" alt="Logo" class="companyLogo" onclick="openLinkInNewTab('https://finance.yahoo.com/quote/SBUX');">
             </div>
             <div class="reasonIOwnDiv">
-                <h2 class="reasonIOwnHeader">
+                <h1 class="reasonIOwnHeader">
                     Reason I Own Starbucks
-                </h2>
+                </h1>
                 <p class="reasonIOwnDescription">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et sapien euismod, consectetur libero nec, consequat libero. Fusce suscipit gravida tellus, eget efficitur nulla vehicula nec. Integer et quam ligula. Pellentesque euismod tempus velit, vel suscipit nunc dapibus in. Mauris hendrerit urna sit amet massa tempor scelerisque. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed mattis massa id nisl vulputate, sit amet auctor metus blandit. Sed imperdiet, ligula vel ultrices tempor, sem sapien tempor leo, et vehicula velit enim nec nisl. Ut nec bibendum arcu. Duis vitae hendrerit dui, non efficitur odio. Proin consequat odio eget augue tincidunt, sed vehicula nulla rhoncus. Cras id arcu vel ante aliquam dignissim at id velit. Phasellus accumsan, magna at aliquam eleifend, mauris metus lacinia nisi, id euismod risus mi non leo. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vivamus dapibus vitae velit sed fermentum. Curabitur sed nunc odio.
 
@@ -153,12 +156,12 @@
 
         <div class="stockPhilosphyText" style="display: flex;">
             <div class="companyLogo-container">
-                <img src="../images/StockPage/targetLogo.png" alt="Logo" class="companyLogo">
+                <img src="../images/StockPage/targetLogo.png" alt="Logo" class="companyLogo" onclick="openLinkInNewTab('https://finance.yahoo.com/quote/TGT');">
             </div>
             <div class="reasonIOwnDiv">
-                <h2 class="reasonIOwnHeader">
+                <h1 class="reasonIOwnHeader">
                     Reason I Own Target
-                </h2>
+                </h1>
                 <p class="reasonIOwnDescription">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et sapien euismod, consectetur libero nec, consequat libero. Fusce suscipit gravida tellus, eget efficitur nulla vehicula nec. Integer et quam ligula. Pellentesque euismod tempus velit, vel suscipit nunc dapibus in. Mauris hendrerit urna sit amet massa tempor scelerisque. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed mattis massa id nisl vulputate, sit amet auctor metus blandit. Sed imperdiet, ligula vel ultrices tempor, sem sapien tempor leo, et vehicula velit enim nec nisl. Ut nec bibendum arcu. Duis vitae hendrerit dui, non efficitur odio. Proin consequat odio eget augue tincidunt, sed vehicula nulla rhoncus. Cras id arcu vel ante aliquam dignissim at id velit. Phasellus accumsan, magna at aliquam eleifend, mauris metus lacinia nisi, id euismod risus mi non leo. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vivamus dapibus vitae velit sed fermentum. Curabitur sed nunc odio.
 
@@ -173,12 +176,12 @@
       
         <div class="stockPhilosphyText" style="display: flex;">
             <div class="companyLogo-container">
-                <img src="../images/StockPage/philipMorrisInternationalLogo.png" alt="Logo" class="companyLogo">
+                <img src="../images/StockPage/philipMorrisInternationalLogo.png" alt="Logo" class="companyLogo" onclick="openLinkInNewTab('https://finance.yahoo.com/quote/PM');">
             </div>
             <div class="reasonIOwnDiv">
-                <h2 class="reasonIOwnHeader">
+                <h1 class="reasonIOwnHeader">
                     Reason I Own Philip Morris
-                </h2>
+                </h1>
                 <p class="reasonIOwnDescription">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et sapien euismod, consectetur libero nec, consequat libero. Fusce suscipit gravida tellus, eget efficitur nulla vehicula nec. Integer et quam ligula. Pellentesque euismod tempus velit, vel suscipit nunc dapibus in. Mauris hendrerit urna sit amet massa tempor scelerisque. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed mattis massa id nisl vulputate, sit amet auctor metus blandit. Sed imperdiet, ligula vel ultrices tempor, sem sapien tempor leo, et vehicula velit enim nec nisl. Ut nec bibendum arcu. Duis vitae hendrerit dui, non efficitur odio. Proin consequat odio eget augue tincidunt, sed vehicula nulla rhoncus. Cras id arcu vel ante aliquam dignissim at id velit. Phasellus accumsan, magna at aliquam eleifend, mauris metus lacinia nisi, id euismod risus mi non leo. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vivamus dapibus vitae velit sed fermentum. Curabitur sed nunc odio.
 
@@ -193,12 +196,12 @@
 
         <div class="stockPhilosphyText" style="display: flex;">
             <div class="companyLogo-container">
-                <img src="../images/StockPage/ARKGLogo.png" alt="Logo" class="companyLogo">
+                <img src="../images/StockPage/ARKGLogo.png" alt="Logo" class="companyLogo" onclick="openLinkInNewTab('https://finance.yahoo.com/quote/ARKG');">
             </div>
             <div class="reasonIOwnDiv">
-                <h2 class="reasonIOwnHeader">
+                <h1 class="reasonIOwnHeader">
                     Reason I Own Ark Genomic Revolution ETF
-                </h2>
+                </h1>
                 <p class="reasonIOwnDescription">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et sapien euismod, consectetur libero nec, consequat libero. Fusce suscipit gravida tellus, eget efficitur nulla vehicula nec. Integer et quam ligula. Pellentesque euismod tempus velit, vel suscipit nunc dapibus in. Mauris hendrerit urna sit amet massa tempor scelerisque. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed mattis massa id nisl vulputate, sit amet auctor metus blandit. Sed imperdiet, ligula vel ultrices tempor, sem sapien tempor leo, et vehicula velit enim nec nisl. Ut nec bibendum arcu. Duis vitae hendrerit dui, non efficitur odio. Proin consequat odio eget augue tincidunt, sed vehicula nulla rhoncus. Cras id arcu vel ante aliquam dignissim at id velit. Phasellus accumsan, magna at aliquam eleifend, mauris metus lacinia nisi, id euismod risus mi non leo. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vivamus dapibus vitae velit sed fermentum. Curabitur sed nunc odio.
 
@@ -213,12 +216,12 @@
 
         <div class="stockPhilosphyText" style="display: flex;">
             <div class="companyLogo-container">
-                <img src="../images/StockPage/CloroxLogo.jpg" alt="Logo" class="companyLogo">
+                <img src="../images/StockPage/CloroxLogo.jpg" alt="Logo" class="companyLogo" onclick="openLinkInNewTab('https://finance.yahoo.com/quote/CLX');">
             </div>
             <div class="reasonIOwnDiv">
-                <h2 class="reasonIOwnHeader">
+                <h1 class="reasonIOwnHeader">
                     Reason I Own Clorox
-                </h2>
+                </h1>
                 <p class="reasonIOwnDescription">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et sapien euismod, consectetur libero nec, consequat libero. Fusce suscipit gravida tellus, eget efficitur nulla vehicula nec. Integer et quam ligula. Pellentesque euismod tempus velit, vel suscipit nunc dapibus in. Mauris hendrerit urna sit amet massa tempor scelerisque. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed mattis massa id nisl vulputate, sit amet auctor metus blandit. Sed imperdiet, ligula vel ultrices tempor, sem sapien tempor leo, et vehicula velit enim nec nisl. Ut nec bibendum arcu. Duis vitae hendrerit dui, non efficitur odio. Proin consequat odio eget augue tincidunt, sed vehicula nulla rhoncus. Cras id arcu vel ante aliquam dignissim at id velit. Phasellus accumsan, magna at aliquam eleifend, mauris metus lacinia nisi, id euismod risus mi non leo. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vivamus dapibus vitae velit sed fermentum. Curabitur sed nunc odio.
 
@@ -234,127 +237,126 @@
             <h1 style="text-align: center;">Future Purchases?</h1>
             <h4>Here is my list of companies I think match this criteria above. They may make it into the Roth IRA if I see a good buying  opportunity and things check out when I research deeper. Maybe someday they will have their own section above!</h4>
             <table class="companyTable">
-                <tr>
+                <tr >
                     <th>Company</th>
                     <th>Stock Symbol</th>
                     <th>Industry</th>
                 </tr>
-                <tr>
+                <tr onclick="openLinkInNewTab('https://finance.yahoo.com/quote/AAPL');">
                     <td>Apple</td>
                     <td>AAPL</td>
                     <td>Technology</td>
                 </tr>
-                <tr>
+                <tr onclick="openLinkInNewTab('https://finance.yahoo.com/quote/AMZN');">
                     <td>Amazon</td>
                     <td>AMZN</td>
                     <td>Technology / Retail</td>
                 </tr>
-                <tr>
+                <tr onclick="openLinkInNewTab('https://finance.yahoo.com/quote/BTI');">
                     <td>British American Tobacco</td>
                     <td>BTI</td>
                     <td>Tobacco</td>
                 </tr>
-                <tr>
+                <tr onclick="openLinkInNewTab('https://finance.yahoo.com/quote/CNI');">
                     <td>Canadian National Railway</td>
-                    <td>CNR</td>
+                    <td>CNI</td>
                     <td>Transportation</td>
                 </tr>
-                <tr>
+                <tr onclick="openLinkInNewTab('https://finance.yahoo.com/quote/CP');">
                     <td>Canadian Pacific Kansas City Rail</td>
                     <td>CP</td>
                     <td>Transportation</td>
                 </tr>
-                <tr>
+                <tr onclick="openLinkInNewTab('https://finance.yahoo.com/quote/KO');">
                     <td>Coca-Cola</td>
                     <td>KO</td>
                     <td>Beverages</td>
                 </tr>
-                <tr>
+                <tr onclick="openLinkInNewTab('https://finance.yahoo.com/quote/COST');">
                     <td>Costco</td>
                     <td>COST</td>
                     <td>Retail</td>
                 </tr>
-                <tr>
+                <tr onclick="openLinkInNewTab('https://finance.yahoo.com/quote/DE');">
                     <td>Deere</td>
                     <td>DE</td>
                     <td>Agriculture Equipment</td>
                 </tr>
-                <tr>
+                <tr onclick="openLinkInNewTab('https://finance.yahoo.com/quote/SJM');">
                     <td>JM Smucker</td>
                     <td>SJM</td>
                     <td>Food</td>
                 </tr>
-                <tr>
+                <tr onclick="openLinkInNewTab('https://finance.yahoo.com/quote/JNJ');">
                     <td>Johnson & Johnson</td>
                     <td>JNJ</td>
                     <td>Healthcare</td>
                 </tr>
-                <tr>
-                    <td>JP Morgan</td>
-                    <td>JPM</td>
-                    <td>Finance</td>
-                </tr>
-                <tr>
+                <tr onclick="openLinkInNewTab('https://finance.yahoo.com/quote/MA');">
                     <td>Mastercard</td>
                     <td>MA</td>
                     <td>Financial Technology</td>
                 </tr>
-                <tr>
+                <tr onclick="openLinkInNewTab('https://finance.yahoo.com/quote/MCD');">
                     <td>McDonald's</td>
                     <td>MCD</td>
                     <td>Fast Food</td>
                 </tr>
-                <tr>
+                <tr onclick="openLinkInNewTab('https://finance.yahoo.com/quote/META');">
                     <td>Meta</td>
                     <td>META</td>
                     <td>Technology / Social Media</td>
                 </tr>
-                <tr>
+                <tr onclick="openLinkInNewTab('https://finance.yahoo.com/quote/MSFT');">
                     <td>Microsoft</td>
                     <td>MSFT</td>
                     <td>Technology / Enterprise Software</td>
                 </tr>
-                <tr>
+                <tr onclick="openLinkInNewTab('https://finance.yahoo.com/quote/NTDOY');">
                     <td>Nintendo</td>
                     <td>NTDOY</td>
                     <td>Video Games</td>
                 </tr>
-                <tr>
+                <tr onclick="openLinkInNewTab('https://finance.yahoo.com/quote/PEP');">
                     <td>PepsiCo</td>
                     <td>PEP</td>
                     <td>Beverages</td>
                 </tr>
-                <tr>
+                <tr onclick="openLinkInNewTab('https://finance.yahoo.com/quote/TSLA');"> 
                     <td>Tesla</td>
                     <td>TSLA</td>
                     <td>Technology / Automotive</td>
                 </tr>
-                <tr>
+                <tr onclick="openLinkInNewTab('https://finance.yahoo.com/quote/TM');">
                     <td>Toyota</td>
                     <td>TM</td>
                     <td>Automotive</td>
                 </tr>
-                <tr>
+                <tr onclick="openLinkInNewTab('https://finance.yahoo.com/quote/UNP');">
                     <td>Union Pacific</td>
                     <td>UNP</td>
                     <td>Transportation</td>
                 </tr>
-                <tr>
+                <tr onclick="openLinkInNewTab('https://finance.yahoo.com/quote/UVV');">
                     <td>Universal Holdings</td>
                     <td>UVV</td>
                     <td>Tobacco Farming</td>
                 </tr>
-                <tr>
+                <tr onclick="openLinkInNewTab('https://finance.yahoo.com/quote/V');">
                     <td>Visa</td>
                     <td>V</td>
                     <td>Financial Technology</td>
                 </tr>
-                <tr>
+                <tr onclick="openLinkInNewTab('https://finance.yahoo.com/quote/WM');">
                     <td>Waste Management</td>
                     <td>WM</td>
-                    <td>Trash Removal</td>
+                    <td>Waste / Recycling</td>
                 </tr>
             </table>
+        </div>
+        <div class="button-row">
+            <a href="../index.html"><button id="backToIndexBtn">Back to Homepage</button></a>
+            <button id="backToTopBtn" onclick="topFunction();">Back to Top</button>
         </div>
     </body>
 </html>
