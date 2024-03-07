@@ -70,7 +70,7 @@ p a:visited {
     display: flex;
     flex-wrap: wrap;
     align-content: space-around;
-    width: 37%;
+    width: 35%;
     /* width: 70%;  change when add 6 buttons*/
     max-width: 40em;
     margin-left: auto;
