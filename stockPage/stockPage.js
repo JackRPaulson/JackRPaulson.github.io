@@ -21,7 +21,14 @@ function openLinkInNewTab(url)
   a.dispatchEvent(evt);
 }
 
-window.addEventListener('load', getYear);
+window.addEventListener('load', onStockPageOpen);
+
+function onStockPageOpen()
+{
+  document.title = "Jack's Stock Portfolio";
+  getYear();
+}
+
 function getYear()
 {
   // Create a new Date object

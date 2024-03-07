@@ -55,9 +55,7 @@ body {
 }
 
 .assetAllocationIMG{
-    width: 100%;
-    border: 5px solid black;
-    border-radius: 20px;
+    width: 60%;
     user-select: none; /* Makes so the text on the img are not selected */
 }
 
@@ -98,6 +96,7 @@ body {
     align-items: center;
     width: 60%;
     user-select: none; /* Makes so the text on the img are not selected */
+    padding-right: 10px;
 }
 
 .companyLogo {

@@ -1,6 +1,13 @@
 
 // Attach the function to the onload event
-window.addEventListener('load', getime);
+window.addEventListener('load', onAboutMeOpen);
+
+function onAboutMeOpen()
+{
+  document.title = "About Me";
+  getime();
+}
+
 
 function getime()
 {
