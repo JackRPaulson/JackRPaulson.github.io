@@ -58,5 +58,5 @@ function getime()
     }
 
     var welcomeMessage= document.getElementById("welcomeMessageID");
-    welcomeMessage.innerHTML = "Welcome to my about me page! <br>I hope you are having a " + timeMessage + "!";
+    welcomeMessage.innerHTML = "Welcome to my page! <br>I hope you are having a " + timeMessage + "!";
 }
