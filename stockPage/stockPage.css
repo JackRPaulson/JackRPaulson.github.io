@@ -73,21 +73,62 @@ body {
 
 
 .reasonIOwnDiv {
-    display: flex;
     flex-direction: column;
     position: relative;
     width: 100%;
 }
-.reasonIOwnHeader {
+
+.reasonIOwnTable {
+    width: 100%;
     border-bottom: 3px solid black; 
+}
+
+.reasonIOwnTR 
+{
+    width: 100%;
+    border-bottom: 3px solid black; 
+}
+
+
+.reasonIOwnTD:last-child {
+    max-width: 15%;
+    width:15%; 
+}
+
+.reasonIOwnHeader {
+   
     margin: 0;
     text-decoration: none;
+    display: inline-block; /* Change the display to inline-block */
+    vertical-align: top; /* Align elements to the top of the container */
+}
+
+.reasonIOwnHeader:last-child {
+    margin-left: auto; /* Push the last h2 element to the right by using auto margins */
+    text-align: right;
+}
+
+.reasonIOwnHeader h2, .reasonIOwnHeader p {
+    display: inline-block;
+    margin: 0;
+    text-decoration: none;
+    vertical-align: top; /* Align elements to the top of the container */
 }
 
 .reasonIOwnDescription {
     height:100%; 
     margin:0; 
     margin-top: 5px;
+}
+
+.reasonIOwnDescriptionWriting {
+    margin-bottom: 0px;
+    margin-top: 15px;
+}
+
+.reasonIOwnDescriptionWritingHeader {
+    margin-top: 15px;
+    margin-bottom: 0px;
 }
 
 .companyLogo-container {
