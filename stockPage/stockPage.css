@@ -90,7 +90,7 @@ body {
 }
 
 
-.reasonIOwnTD:last-child {
+.reasonIOwnTDPercentOfPortfolio {
     max-width: 15%;
     width:15%; 
 }
@@ -101,9 +101,11 @@ body {
     text-decoration: none;
     display: inline-block; /* Change the display to inline-block */
     vertical-align: top; /* Align elements to the top of the container */
+    text-align: left;
+
 }
 
-.reasonIOwnHeader:last-child {
+.reasonIOwnHeaderPercentOfPortfolio {
     margin-left: auto; /* Push the last h2 element to the right by using auto margins */
     text-align: right;
 }
