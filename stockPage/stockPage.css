@@ -55,7 +55,7 @@ body {
 }
 
 .assetAllocationIMG{
-    width: 60%;
+    width: 70%;
     user-select: none; /* Makes so the text on the img are not selected */
 }
 
