@@ -163,9 +163,9 @@ p a:visited {
     line-height: 1.8em;
 }
 
-@-webkit-keyframes tracking-in-expand-fwd{0%{letter-spacing:-.5em;-webkit-transform:translateZ(-700px);transform:translateZ(-700px);opacity:0}40%{opacity:.6}100%{-webkit-transform:translateZ(0);transform:translateZ(0);opacity:1}}
+@-webkit-keyframes tracking-in-expand-fwd{0%{letter-spacing:-.6em;-webkit-transform:translateZ(-720px);transform:translateZ(-720px);opacity:0}45%{opacity:.5}100%{-webkit-transform:translateZ(0);transform:translateZ(0);opacity:1}}
 
-@keyframes tracking-in-expand-fwd{0%{letter-spacing:-.5em;-webkit-transform:translateZ(-700px);transform:translateZ(-700px);opacity:0}40%{opacity:.6}100%{-webkit-transform:translateZ(0);transform:translateZ(0);opacity:1}}
+@keyframes tracking-in-expand-fwd{0%{letter-spacing:-.6em;-webkit-transform:translateZ(-720px);transform:translateZ(-720px);opacity:0}45%{opacity:.5}100%{-webkit-transform:translateZ(0);transform:translateZ(0);opacity:1}}
 
 @media only screen and (max-width: 500px) {
     #header 
@@ -222,7 +222,8 @@ p a:visited {
 }
 
 .intro-animation {
-	animation: tracking-in-expand-fwd 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
-	-moz-animation: tracking-in-expand-fwd 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
-	-webkit-animation: tracking-in-expand-fwd 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
-}
+    animation: tracking-in-expand-fwd 0.8s cubic-bezier(0.200, 0.600, 0.300, 1.000) both;
+    -webkit-animation: tracking-in-expand-fwd 0.8s cubic-bezier(0.200, 0.600, 0.300, 1.000) both; /* For Safari, Chrome, etc. */
+    -moz-animation: tracking-in-expand-fwd 0.8s cubic-bezier(0.200, 0.600, 0.300, 1.000) both; /* For Firefox */
+    -o-animation: tracking-in-expand-fwd 0.8s cubic-bezier(0.200, 0.600, 0.300, 1.000) both; /* For Opera */
+  }
