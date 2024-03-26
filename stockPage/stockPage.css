@@ -108,6 +108,9 @@ body {
 .reasonIOwnHeaderPercentOfPortfolio {
     margin-left: auto; /* Push the last h2 element to the right by using auto margins */
     text-align: right;
+    display: inline-block;
+    margin: 0;
+    text-decoration: none;
 }
 
 .reasonIOwnHeader h2, .reasonIOwnHeader p {
@@ -221,3 +224,10 @@ body {
   .backButton:hover {
     background-color: #00ff1e; /* lime green background on hover */
   }
+
+@media only screen and (max-width: 500px) {
+
+    .companyLogo-container {
+        display: none;
+    }
+}
