@@ -1,7 +1,6 @@
 function openLinkInNewTab(url) {
     var a = document.createElement("a");
     a.href = url;
-    a.target = "_blank"; // Open in a new tab
 
     // Simulate a click event
     var evt = new MouseEvent("click", {
@@ -10,5 +9,14 @@ function openLinkInNewTab(url) {
         view: window
     });
     
-    a.dispatchEvent(evt);
+    try
+    {
+        a.target = "_blank"; // Open in a new tab
+        a.dispatchEvent(evt);
+    }
+    catch
+    {
+        a.removeAttribute('target'); 
+        a.dispatchEvent(evt);
+    }
 }
