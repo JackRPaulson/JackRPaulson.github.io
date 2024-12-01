@@ -1,4 +1,4 @@
-function openLinkInNewTabOrCurrent(url) {
+function openLinkInNewTab(url) {
     var a = document.createElement("a");
     a.href = url;
     a.target = "_blank"; // Open in a new tab
