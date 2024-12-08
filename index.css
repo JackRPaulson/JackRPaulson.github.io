@@ -227,3 +227,47 @@ p a:visited {
     -moz-animation: tracking-in-expand-fwd 0.8s cubic-bezier(0.200, 0.600, 0.300, 1.000) both; /* For Firefox */
     -o-animation: tracking-in-expand-fwd 0.8s cubic-bezier(0.200, 0.600, 0.300, 1.000) both; /* For Opera */
   }
+
+
+
+  /* Modal Styles */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 1000;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: black;
+  }
+  
+  /* Modal Content (Fullsize Image) */
+  .modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    border-radius: 100px;
+    height: 92%;
+  }
+  
+  /* Close Button */
+  .close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #bbb;
+  }
