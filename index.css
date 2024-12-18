@@ -268,6 +268,26 @@ p a:visited {
   }
   
   .close:hover,
-  .close:focus {
+  .close:focus 
+{
     color: #bbb;
-  }
+}
+
+  .image-wrapper {
+    width: fit-content; /* Or a fixed width if you prefer */
+    height: fit-content; /* Or a fixed height */
+    max-width: 95%;
+    max-height: 95%;
+    border-radius: 10px; /* Your desired border-radius */
+    overflow: hidden; /* Crucial for clipping the image */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-wrapper img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain; /* Maintain aspect ratio */
+    display: block;
+}
