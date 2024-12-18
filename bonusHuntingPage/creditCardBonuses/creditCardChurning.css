@@ -57,7 +57,7 @@ body {
 .card-content h3 {
   margin: 0 0 10px; /* Add space below the title */
   font-size: 1.8em; /* Adjust font size of the title */
-  color: #333; /* Set a text color */
+  color: #202020; /* Set a text color */
   display: inline-block; /* Limit the width to the text content */
   border-bottom: 2px solid black; /* Accent line below heading */
 }
@@ -109,7 +109,7 @@ section {
 section h2 {
   margin-top: 0; /* Remove top margin to align with section */
   font-size: 2.2em; /* Increase font size for headings */
-  color: #333; /* Darker color for better contrast */
+  color: #202020;/* Darker color for better contrast */
   display: inline-block; /* Limit the width to the text content */
   border-bottom: 2px solid black; /* Accent line below heading */
   padding-bottom: 5px; /* Add spacing between text and underline */
@@ -118,7 +118,7 @@ section h2 {
 section p {
   margin: 15px 0; /* Add spacing between paragraphs */
   line-height: 1.6; /* Improve readability */
-  color: #555; /* Slightly muted text for a clean look */
+  color: #202020; /* Slightly muted text for a clean look */
   font-size: 1.2em;
   padding-bottom: 10px;
 }
@@ -142,7 +142,7 @@ section a:hover {
 section li {
   line-height: 1.6; /* Improve readability */
   font-size: 1em;
-  color: #555; /* Slightly muted text for a clean look */
+  color: #202020; /* Slightly muted text for a clean look */
 }
 
 section li strong {
