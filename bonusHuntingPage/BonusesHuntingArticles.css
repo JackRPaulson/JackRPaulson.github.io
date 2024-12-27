@@ -21,7 +21,6 @@ body {
     border-radius: 6%; /* Optional: add rounded corners to the image */
   }
   
-  
   /* Media query to adjust layout on mobile */
   @media (max-width: 768px) {
     .rulesSectionDiv {
@@ -48,7 +47,6 @@ body {
     display: flex;
     align-items: flex-start; /* Align items at the top */
     gap: 15px; /* Add space between the image and text */
-    width: 98%
   }
   
   .card-image {
@@ -56,9 +54,15 @@ body {
     height: auto; /* Maintain aspect ratio */
     border-radius: 6%; /* Optional: add rounded corners to the image */
     cursor: pointer; /* Make the whole div clickable */
+  }
+
+  .card-image-allign-bottom {
+    width: 40%; /* Set a fixed width for the image */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 6%; /* Optional: add rounded corners to the image */
+    cursor: pointer; /* Make the whole div clickable */
     align-self: end;
   }
-  
   
   .card-content {
     flex: 1; /* Allow the text section to take up the remaining space */
@@ -81,6 +85,10 @@ body {
     padding-bottom: 10px;
   }
   
+  .bottomButtons {
+    width: 47%
+  }
+
   /* Add this media query to adjust for mobile devices */
   @media (max-width: 768px) 
   {
@@ -112,8 +120,17 @@ body {
     {
       text-align:left;
     }
-  }
 
+    .button-row button {
+      width: 95%;
+    }
+  }
+  @media (min-width: 768px) 
+  {
+    .button-row button {
+      width: 46%;
+    }
+  }
   /* Add this media query to adjust for wide screens */
   @media (min-width: 1500px) 
   {
@@ -153,17 +170,16 @@ body {
   }
   
   section p {
-    margin: 15px 0; /* Add spacing between paragraphs */
+    margin: 10px 0; /* Add spacing between paragraphs */
     line-height: 1.6; /* Improve readability */
     color: #202020; /* Slightly muted text for a clean look */
     font-size: 1.2em;
-    padding-bottom: 10px;
+    padding-bottom: 5px;
   }
   
   section p strong {
     color: black; /* Highlight strong text in a vibrant color */
     font-weight: bold;
-    
   }
   
   section a {
@@ -207,7 +223,11 @@ body {
     position: relative;
     top: 15px;
   }
-  
+
+  .american-express-rules-paragraph
+  {
+    padding-bottom: 25px;
+  }
   .backButton:hover {
     background-color: #00ff1e; /* lime green background on hover */
   }
@@ -234,12 +254,15 @@ body {
     border-radius: 20px; /* Rounded corners */
     cursor: pointer; /* Change cursor to pointer on hover */
     display: inline-block; /* Display buttons inline */
-    width: 47%;
     font-weight: bold;
   }
   
   .button-row button:hover {
     background-color: #00ff1e; /* lime green background on hover */
+  }
+
+  .card-title {
+    border-bottom: 2px solid black; /* Accent line below heading */
   }
 
   .backButton {
