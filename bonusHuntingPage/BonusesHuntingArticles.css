@@ -68,7 +68,10 @@ body {
     align-self: end;
   }
   
-
+  .card-content {
+    flex: 1; /* Allow the text section to take up the remaining space */
+    text-align: left; /* Align text to the left */
+  }
   
   .card-content h3 {
     margin: 0 0 10px; /* Add space below the title */
@@ -125,6 +128,7 @@ body {
     .button-row button {
       width: 95%;
     }
+
   }
   @media (min-width: 768px) 
   {
