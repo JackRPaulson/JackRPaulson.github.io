@@ -28,6 +28,17 @@ body {
     width: 100%; /* Make the image take full width */
     margin-bottom: 15px; /* Add space below the image */
   }
+
+  .cardSectionDivID {
+    flex-direction: column; /* Stack image and text vertically */
+    align-items: center; /* Center items */
+  }
+  
+  li
+  {
+    text-align:left;
+  }
+  
 }
 
 .cardSectionDivID {
@@ -72,11 +83,6 @@ body {
 /* Add this media query to adjust for mobile devices */
 @media (max-width: 768px) 
 {
-  .cardSectionDivID {
-    flex-direction: column; /* Stack image and text vertically */
-    align-items: center; /* Center items */
-  }
-
   .card-image {
     width: 100%; /* Make the image take full width */
     margin-bottom: 15px; /* Add space below the image */
@@ -84,6 +90,9 @@ body {
 
   .card-content {
     text-align: center; /* Optional: center-align the text */
+  }
+  .responsive-image {
+    width: 100%; /* Make the image take 100% width on mobile */
   }
 }
 
@@ -188,11 +197,4 @@ section li strong {
 .responsive-image {
   display: inline-block;
   width: 50%; /* Default width for larger screens */
-}
-
-/* Media query for mobile screens */
-@media (max-width: 768px) {
-  .responsive-image {
-      width: 100%; /* Make the image take 100% width on mobile */
-  }
 }
