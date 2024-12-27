@@ -116,7 +116,8 @@ body {
       width: 100%;
     }
 
-    .responsive-image {
+    .responsive-image  
+    {
       width: 100%; /* Make the image take 100% width on mobile */
     }
 
@@ -135,6 +136,7 @@ body {
     .button-row button {
       width: 46%;
     }
+    
   }
   /* Add this media query to adjust for wide screens */
   @media (min-width: 1500px) 
@@ -244,7 +246,9 @@ body {
   
   .responsive-image {
     display: inline-block;
-    width: 50%; /* Default width for larger screens */
+    width: 100%; /* Default width for larger screens */
+    max-height: 600px;
+    max-width: 600px;
   }
 
   .button-row {
