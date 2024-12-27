@@ -130,13 +130,19 @@ body {
       width: 95%;
     }
 
+    .qatarReferalLinks {
+      display: block;
+    }
   }
   @media (min-width: 768px) 
   {
     .button-row button {
       width: 46%;
     }
-    
+
+    .qatarReferalLinks {
+      display: none;
+    }
   }
   /* Add this media query to adjust for wide screens */
   @media (min-width: 1500px) 
