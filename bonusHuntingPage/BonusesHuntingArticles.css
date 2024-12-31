@@ -67,6 +67,14 @@ body {
     cursor: pointer; /* Make the whole div clickable */
     align-self: end;
   }
+
+  .card-image-allign-bottom-ben-franklin {
+    width: 35%; /* Set a fixed width for the image */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 6%; /* Optional: add rounded corners to the image */
+    cursor: pointer; /* Make the whole div clickable */
+    align-self: end;
+  }
   
   .card-content {
     flex: 1; /* Allow the text section to take up the remaining space */
@@ -91,6 +99,32 @@ body {
   
   .bottomButtons {
     width: 47%
+  }
+  .comparingBankAndCreditCardBonusesImage {
+    min-width: 800px; 
+    width: 35%;
+  }
+  .mapOfSportsBettingLegalStatesImage {
+    min-width: 800px; 
+    width: 35%;
+  }
+  .onlineBettingImages {
+    min-width:350px;
+    width: 35%;
+  }
+
+  /* Add this media query to adjust for smaller screens but bigger than mobile */
+  @media (max-width: 1100px) 
+  {
+
+    .comparingBankAndCreditCardBonusesImage {
+      min-width: 400px;
+    }
+
+    .mapOfSportsBettingLegalStatesImage {
+      min-width: 400px;
+      
+    }
   }
 
   /* Add this media query to adjust for mobile devices */
@@ -133,7 +167,35 @@ body {
     .qatarReferalLinks {
       display: block;
     }
+
+    img {
+      width: 70%;
+      min-width: 360px;
+    }
+    .comparingBankAndCreditCardBonusesImage {
+      min-width: 0px;
+      width: 110%;
+    }
+
+    .mapOfSportsBettingLegalStatesImage {
+      min-width: 0px;
+      width: 110%;
+    }
+
+    .imageNotInrulesSectionDiv {
+      position: relative;
+      left: -15px;
+    }
+
+    .card-image-allign-bottom {
+      width: 70%;
+    }
+    .card-image-allign-bottom-ben-franklin {
+      position: relative;
+      left: 15px;
+    }
   }
+
   @media (min-width: 768px) 
   {
     .button-row button {
@@ -179,7 +241,7 @@ body {
     display: inline-block; /* Limit the width to the text content */
     border-bottom: 2px solid black; /* Accent line below heading */
     padding-bottom: 5px; /* Add spacing between text and underline */
-    margin-bottom: 10px;
+    margin-bottom: 20px;
   }
   
   section p {
