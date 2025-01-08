@@ -168,6 +168,8 @@ h3
     width: 60%;
     user-select: none; /* Makes so the text on the img are not selected */
     padding-right: 10px;
+    align-items: flex-start; 
+    margin-top: 85px;
 }
 
 .companyLogo {
@@ -293,6 +295,14 @@ h3
         height: auto;
         margin-top: 5px;
     }
+    .companyTable 
+    {
+        font-size: 16px;
+    }
+    .button-row button 
+    {
+        width: 95%;
+    }
 }
 
 @media only screen and (min-width: 750px) 
@@ -301,14 +311,17 @@ h3
     {
         display: none;
     }
+    .button-row button {
+        width: 46%;
+      }
 }
 
 @media only screen and (max-width: 1200px) 
 {
     .reasonIOwnTDPercentOfPortfolio 
     {
-        max-width: 30%;
-        width: 30%; 
+        max-width: 32%;
+        width: 32%; 
     }
     .stockPhilosphyText {
         width: 92%;
@@ -325,6 +338,6 @@ h3
         margin-top: 10px;
     }
     .stockPhilosphyText {
-        width: 88%;
+        width: 87%;
     }
 }

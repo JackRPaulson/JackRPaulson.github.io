@@ -113,6 +113,10 @@ body {
     width: 35%;
   }
 
+  .imageNotInrulesSectionDiv {
+    width: -webkit-fill-available;
+  }
+
   /* Add this media query to adjust for smaller screens but bigger than mobile */
   @media (max-width: 1100px) 
   {
@@ -170,7 +174,7 @@ body {
 
     img {
       width: 70%;
-      min-width: 360px;
+      min-width: 300px;
     }
     .comparingBankAndCreditCardBonusesImage {
       min-width: 0px;
