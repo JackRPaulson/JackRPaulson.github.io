@@ -303,6 +303,10 @@ body {
     top: 15px;
   }
 
+  ul {
+    list-style: none;
+  }
+  
   .american-express-rules-paragraph
   {
     padding-bottom: 25px;
