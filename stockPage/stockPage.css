@@ -271,6 +271,25 @@ h3
 .comaTestTitle {
     margin-top: -40px;
 }
+
+.inEssayImage {
+    width:100%;
+    max-width: 800px;
+    max-height: 450px;
+}
+
+.zynCan {
+    padding-top:5px;
+}
+
+.tickerSymbol{
+    color:mediumblue;
+}
+
+.tickerSymbolSBUX{
+    color:green;
+}
+
 @media only screen and (max-width: 750px) 
 {
     .companyLogo-container 
@@ -303,6 +322,11 @@ h3
     {
         width: 95%;
     }
+    .zynCan {
+        max-width:100%;
+        width:100%;
+    }
+    
 }
 
 @media only screen and (min-width: 750px) 
