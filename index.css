@@ -31,7 +31,7 @@ body {
     background-size: 100%;
 }
 
-#app-icon {
+/* #app-icon {
     background-image: url("../images/app_icon.png");
     margin-left: auto;
     margin-right: auto;
@@ -44,7 +44,7 @@ body {
     background-size: 100%;
     height: 12em;
     width: 12em;
-}
+} */
 
 h1 {
     text-align: center;
@@ -87,7 +87,7 @@ p a:visited {
     line-height: 1;
     text-transform: uppercase;
     position: relative;
-    width: 10.3em;
+    width: 200px;
     margin: 0 30px 2em;
     background: none;
     border: 2px solid #111;
@@ -292,4 +292,14 @@ p a:visited {
     max-height: 100%;
     object-fit: contain; /* Maintain aspect ratio */
     display: block;
+}
+
+@media (max-width: 870px) 
+{
+    .modal-content {
+        height: fit-content;
+        border-radius: 50px;
+        width:86%;
+        margin-top: 15%;
+    }
 }
