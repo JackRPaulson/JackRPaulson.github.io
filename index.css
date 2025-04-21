@@ -109,6 +109,11 @@ p a:visited {
     background-color: #111;
 }
 
+/* #chocolateButton:hover {
+    color: blue;
+    background-color: blue;
+} */
+
 #about:hover {
     color: #F012BE;
     background-color: #111;
