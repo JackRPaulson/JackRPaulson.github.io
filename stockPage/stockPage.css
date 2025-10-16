@@ -1,3 +1,7 @@
+html {
+    color-scheme: light;
+  }
+
 body {
     background-color: rgb(83, 82, 82); /* Change the background color as desired */
 }

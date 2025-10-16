@@ -172,3 +172,20 @@
         max-width: 300px; /* Optional: Set a max width to avoid overly large buttons */
     }
 }
+
+html {
+    color-scheme: light;
+}
+
+
+body {
+    background-color: #fff;
+}
+
+/* Override for dark mode preference */
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #ffffff; /* Force white background even in dark mode */
+    }
+    /* ... apply the same light theme styles to other elements here ... */
+}
