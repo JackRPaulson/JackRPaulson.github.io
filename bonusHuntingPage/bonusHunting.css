@@ -171,6 +171,10 @@
         width: 80%; /* Optional: Adjust button width for better appearance */
         max-width: 300px; /* Optional: Set a max width to avoid overly large buttons */
     }
+
+    .sportsBettingBonusButton {
+        margin-bottom: 5px;
+    }
 }
 
 html {
