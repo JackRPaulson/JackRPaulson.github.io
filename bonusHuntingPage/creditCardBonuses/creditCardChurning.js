@@ -5,14 +5,14 @@ function getAndOpenCreditCardLinkInNewTab(cardName)
 		// Cards I have referall links for
     ChaseFreedom: "https://www.referyourchasecard.com/18A/BTLGN8LZ1W",
 		ChaseAmazonCard: "https://www.amazon.com/dp/BT00LN946S?externalReferenceId=42d266ea-6edf-4de9-965d-b2310af4a856",
-		AMEXHiltonHonors: "https://americanexpress.com/en-us/referral/hilton-honors?ref=JACKPR8De&XL=MIMNS",
-		AMEXHiltonSurpass: "https://americanexpress.com/en-us/referral/hilton-honors?ref=JACKPR8De&XL=MIMNS",
-		AMEXGoldCard: "https://americanexpress.com/en-us/referral/gold-card?ref=JACKP4IxS&XL=MIMNS",
-		AMEXPlatinumCard: "https://americanexpress.com/en-us/referral/platinum-card?ref=JACKP6ueVr&XL=MIMNS",
-		AMEXBlueCashEveryday: "https://americanexpress.com/en-us/referral/blue-cash-everyday-credit-card?ref=JACKPSR7m&XL=MIMNS",
+		AMEXHiltonHonors: "https://www.americanexpress.com/en-us/credit-cards/referral/prospect/hilton-honors?ref=JACKPR8De&XL=MIFNS",
+		AMEXHiltonSurpass: "https://www.americanexpress.com/en-us/credit-cards/referral/prospect/hilton-honors?ref=JACKPR8De&XL=MIFNS",
+		AMEXGoldCard: "https://www.americanexpress.com/en-us/referral/gold-card?ref=JACKPikET&XL=MIFNS",
+		AMEXPlatinumCard: "https://www.americanexpress.com/en-us/referral/platinum-card?ref=JACKPcQes&XL=MIFNS",
+		AMEXBlueCashEveryday: "https://americanexpress.com/en-us/referral/blue-cash-everyday-credit-card?ref=JACKPYBa2&XL=MIFNS",
 		DiscoverItChrome: "https://refer.discover.com/s/paulsjac000?advocate.partner_share_id=7305981829",
     // is a referall link but usually doesn't change. (Only shows on mobile)
-		QatarAirways: "https://go.cardless.com/e/6au82xsKkMb",
+		//QatarAirways: "https://go.cardless.com/e/6au82xsKkMb",
 
     // Cards that I do not have referall links for but want to have the user
     // be able to click it and it take it to a page about the card. 

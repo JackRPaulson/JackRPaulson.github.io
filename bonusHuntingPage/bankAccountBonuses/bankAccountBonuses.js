@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", function ()
     });
 
     const chimeLogoImage = document.getElementById("chimeLogoImage");
-    const PFCULogoImage = document.getElementById("PFCULogoImage");
+    // const PFCULogoImage = document.getElementById("PFCULogoImage");
     const profitableContentLogoImage = document.getElementById("profitableContentLogoImage");
 
     chimeLogoImage.addEventListener("click", function () 
@@ -42,10 +42,10 @@ document.addEventListener("DOMContentLoaded", function ()
         getAndOpenBankBonusLinkInNewTab("ChimeBonus");
     });
 
-    PFCULogoImage.addEventListener("click", function () 
-    {
-        getAndOpenBankBonusLinkInNewTab("PortlandFederalCreditUnionBonus");
-    });
+    // PFCULogoImage.addEventListener("click", function () 
+    // {
+    //     getAndOpenBankBonusLinkInNewTab("PortlandFederalCreditUnionBonus");
+    // });
 
     profitableContentLogoImage.addEventListener("click", function () 
     {
