@@ -19,6 +19,15 @@ body {
     min-height: 100vh;
     height: 100%;
     flex-direction: column;
+    background-color: #fff;
+}
+
+/* Override for dark mode preference */
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #ffffff; /* Force white background even in dark mode */
+    }
+    /* ... apply the same light theme styles to other elements here ... */
 }
 
 #profilePic {
