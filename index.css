@@ -1,3 +1,8 @@
+html 
+{
+    color-scheme: light;
+}
+
 #header {
     width: 34em;
     border-bottom: 2px gray solid;
